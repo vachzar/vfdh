@@ -4,7 +4,7 @@
 // @name           Various Filehosting Download Helper
 // @icon           http://puu.sh/2MzuG
 // @homepageURL    https://goo.gl/o34ydc
-// @version        0.96a
+// @version        0.97
 // @namespace      vachzar/vfdh
 // @author         vachzar
 // @description    A fork of Yet Another Download Helper for Various FileHosting, Just Helper Dengan Taburan Kacang Almond Diselimuti Coklat Belgia Yang Langsung Meleleh Bila Masuk Di Mulut. [Argggghhh} (╯°Д°）╯︵ ɯuᴎƃɐɯ
@@ -95,7 +95,7 @@
 // @include        *inafile.com/*
 // @include        *imzupload.com/*
 // @include        *jumbofiles.com/*
-// @include        *kumpulbagi.com/*
+// @include        *kumpulbagi.id/*
 // @include        *limelinx.com/*
 // @include        *lumfile.com/*
 // include        *mediafire.com/?*
