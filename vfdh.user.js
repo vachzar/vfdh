@@ -4,7 +4,7 @@
 // @name           Various Filehosting Download Helper
 // @icon           http://puu.sh/2MzuG
 // @homepageURL    https://goo.gl/o34ydc
-// @version        0.98
+// @version        0.99
 // @namespace      vachzar/vfdh
 // @author         vachzar
 // @description    A fork of Yet Another Download Helper for Various FileHosting, Just Helper Dengan Taburan Kacang Almond Diselimuti Coklat Belgia Yang Langsung Meleleh Bila Masuk Di Mulut. [Argggghhh} (╯°Д°）╯︵ ɯuᴎƃɐɯ
@@ -143,6 +143,7 @@
 // @include        *ziddu.com/download/*
 // @include           *downloads.ziddu.com/downloadfile/*
 // @include        *zippyshare.com/*/file.html*
+// @include        *awcloud.pw*
 
   // @include        *.4shared.com/android/*
   // @include        *.4shared.com/archive/*
@@ -205,6 +206,7 @@ $(document).ready(function() {
   Download(/albafile|filefolks|queenshare/, AlbaFile);
   Download(/anonfiles/, AnonFiles);
   Download(/asfile/, AsFile);
+  Download(/awcloud/, AWCloud);
   Download(/bayfiles.net/, BayFiles);
   Download(/billionuploads/, BillionUploads);
   Download(/bitshare/, BitShare);
@@ -229,7 +231,6 @@ $(document).ready(function() {
   Download(/gamefront/, GameFront);
   Download(/ge.tt/, Gett);
   Download(/hostr.co/, Hostr);
-//  Download(/hotfile/, HotFile);
   Download(/hugefiles.net/, HugeFiles);
   Download(/hulkload/, HulkLoad);
   Download(/ifile.ws|arabloads|zaladuj.to/, iFile);
@@ -246,7 +247,6 @@ $(document).ready(function() {
   Download(/movreel/, Movreel);
   Download(/netload.in/, NetLoad);
   Download(/potload|potload.net/, PotLoad);
-//  Download(/rapidgator.net/, RapidGator);
   Download(/rapidshare/, RapidShare);
   Download(/rghost.net/, RGhost);
   Download(/sendmyway/, SendMyWay);
@@ -508,7 +508,16 @@ var AsFile = function () {
   setTimeout(func2, 300);
   setTimeout(func3, 500);
 };
-
+var AWCloud = function () {
+  GM_addStyle(ssc);
+  $("script").remove();
+  var func1 = function () { 
+    if ($('.download-timer a.btn.btn-default').length) {
+      window.location= $('.download-timer a.btn.btn-default').attr('href');
+    }
+  };
+  setTimeout(func1, 150);  
+};
 var BayFiles = function () {
   GM_addStyle(ssc);
   $("script").remove();
