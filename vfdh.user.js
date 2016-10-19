@@ -4,7 +4,7 @@
 // @name           Various Filehosting Download Helper
 // @icon           http://puu.sh/2MzuG
 // @homepageURL    https://goo.gl/o34ydc
-// @version        1.0
+// @version        1.1
 // @namespace      vachzar/vfdh
 // @author         vachzar
 // @description    A fork of Yet Another Download Helper for Various FileHosting, Just Helper Dengan Taburan Kacang Almond Diselimuti Coklat Belgia Yang Langsung Meleleh Bila Masuk Di Mulut. [Argggghhh} (╯°Д°）╯︵ ɯuᴎƃɐɯ
@@ -1032,8 +1032,11 @@ var SockShare = function () {
 var SolidFiles = function () {
   GM_addStyle(ssc);
   $("script").remove();
+  console.log('wtf');
+  $('.btn.btn-primary.btn-sm').click();
   if ($('.dl-text #download-btn').length) {
-    window.location= $('.dl-text #download-btn').attr('href');}
+    //window.location= $('.dl-text #download-btn').attr('href');
+  }
 };
 
 var SwankShare = function () {
